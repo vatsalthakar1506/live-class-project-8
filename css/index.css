@@ -91,7 +91,10 @@ div.left-section > h4 {
 }
 .purple {
   position: relative;
+  width: 100%;
+  z-index: -1;
 }
+
 .intro-back {
   position: absolute;
   bottom: 10px;
@@ -209,9 +212,10 @@ div.left-section > h4 {
 @media (max-width: 540px) {
   .intro {
     position: absolute;
-    width: 450%;
+    width: 400%;
     top: -450px;
     z-index: -3;
+    opacity: 0.3;
   }
 
   div .left-section > h1 {
@@ -222,5 +226,9 @@ div.left-section > h4 {
     font-size: 18px;
     font-style: normal;
     font-weight: bold;
+  }
+  .left-section {
+    margin-left: 0px;
+    align-items: center;
   }
 }
